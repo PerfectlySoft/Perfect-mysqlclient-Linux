@@ -22,5 +22,5 @@ import PackageDescription
 let package = Package(
 	name: "mysqlclient",
 	pkgConfig: "mysqlclient",
-	providers: []
+	providers: [.Apt("mysql-client")]
 )
