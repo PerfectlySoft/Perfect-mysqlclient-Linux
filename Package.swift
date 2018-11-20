@@ -1,3 +1,4 @@
+// swift-tools-version:4.0
 //
 //  Package.swift
 //  Perfect-mysqlclient-Linux
@@ -22,5 +23,5 @@ import PackageDescription
 let package = Package(
 	name: "mysqlclient",
 	pkgConfig: "mysqlclient",
-	providers: [.Apt("libmysqlclient-dev")]
+	providers: [.apt(["libmysqlclient-dev"])]
 )
